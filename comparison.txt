@@ -1,2 +1,2 @@
-mobilenet-fat: SIZE= ???, LAYERS= ???
-mobilenet-slim: SIZE= ???, LAYERS= ???
+mobilenet-fat: SIZE=2.69GB, LAYERS=      20
+mobilenet-slim: SIZE=1.28GB, LAYERS=      16
