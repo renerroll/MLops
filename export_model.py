@@ -1,13 +1,16 @@
 import torch
-from torchvision import models
+import torchvision.models as models
 
-def main():
-    model = models.mobilenet_v2(pretrained=True)
-    model.eval()
-    example = torch.randn(1, 3, 224, 224)
-    traced = torch.jit.trace(model, example)
-    traced.save('model.pt')
-    print('Saved model.pt')
+# Завантаження попередньо натренованої моделі MobileNet v2 з офіційними вагами
+model = models.mobilenet_v2(weights=models.MobileNet_V2_Weights.DEFAULT)
+model.eval()  # Перехід у режим оцінки (inference)
 
-if __name__ == '__main__':
-    main()
+# Створення 'манекена' для трасування моделі
+dummy_input = torch.rand(1, 3, 224, 224)
+
+# Трасування моделі в TorchScript
+traced_model = torch.jit.trace(model, dummy_input)
+
+# Збереження моделі
+traced_model.save("./model.pt")
+print("✅ Model saved to model.pt")
