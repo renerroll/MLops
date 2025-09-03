@@ -1,0 +1,31 @@
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+dist/
+*.egg-info/
+pip-wheel-metadata/
+.eggs/
+.python-version
+.env
+.env.*
+*.log
+*.sqlite3
+.DS_Store
+.vscode/
+.idea/
+.pytest_cache/
+coverage.xml
+htmlcov/
+*.egg
+test_results.txt
+*.swp
+*.swo
+# Docker
+docker-compose.override.yml
+
+# keep model.pt tracked (do not ignore .pt files)
