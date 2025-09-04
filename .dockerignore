@@ -1,7 +1,0 @@
-.venv
-.git
-install.log
-__pycache__
-*.pyc
-*.ipynb
-*.pytest_cache
