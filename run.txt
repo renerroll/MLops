@@ -1,0 +1,3 @@
+terraform apply -var="region=us-east-1" -auto-approve
+
+terraform destroy -var="region=us-east-1" -auto-approve

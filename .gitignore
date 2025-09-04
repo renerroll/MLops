@@ -1,0 +1,32 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.backup
+crash.log
+
+# Ignore override files (can contain local changes)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Terraform CLI configs
+.terraformrc
+terraform.rc
+
+# Local terraform plugin directory
+.terraform.d/
+
+# OS / Editor
+.DS_Store
+.vscode/
+.idea/
+
+# Environment files
+.env
+.env.*
