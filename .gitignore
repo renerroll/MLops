@@ -30,3 +30,13 @@ terraform.rc
 # Environment files
 .env
 .env.*
+
+# Backup and misc state files
+*.backup
+*.bak
+*.old
+*~
+*.state
+
+# Text files (if you want to keep specific txt files, remove this line)
+*.txt
